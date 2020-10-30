@@ -1,10 +1,7 @@
 #!/bin/sh
 
-# Check the shell type being used
-SHELL_TYPE="$SHELL"
-
 # Set configuration variables based on type of shell used (bash vs zsh)
-if [ $SHELL_TYPE == '/bin/zsh' ]
+if [ $SHELL == '/bin/zsh' ]
 then
   PROFILE=".zprofile"
   SOURCE_FILE=".zshrc"
